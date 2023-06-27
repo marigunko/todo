@@ -6,6 +6,8 @@ export const ListItem = ({ todo }: { todo: ToDo }) => {
     return (
         <Link
             className={`${classes.link} ${todo.isDone ? classes.done : classes.notDone}`}
+            target="_blank"
+            rel="noreferrer"
             to={`/list/${todo.id}`}
         >
             {todo.text}</Link>
