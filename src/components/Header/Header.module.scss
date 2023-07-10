@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .link {
@@ -26,4 +27,11 @@
 
 .active {
     color: #ffffff33;
+}
+
+.toggleButton {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }

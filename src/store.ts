@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
 import todoReduser from './feature/todoList'
+import themeReduser from './feature/themeList'
 import { loadFromLocalStorage, saveToLocalStorage } from './helpers/storage'
 
 export const store = configureStore({
   reducer: {
-    todoList: todoReduser
+    todoList: todoReduser,
+    themeList: themeReduser
   },
   preloadedState: loadFromLocalStorage()
 })
